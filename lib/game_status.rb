@@ -13,6 +13,3 @@ WIN_COMBINATIONS = [
   [2,4,6],
   [0,4,8]
 ]# Define your WIN_COMBINATIONS constant
-if board[index[0]] == "X" && board[index[1]] == "X" && board[index[2]] == "X"
-  board[index[0]],  board[index[1]],  board[index[2]]
-end
