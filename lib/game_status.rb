@@ -20,5 +20,6 @@ def won?(board)
 end
 
 def full?(board)
-  position_taken(board, index)
-end
+  WIN_COMBINATIONS.detect do |combo|
+    !(board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]]) && position_taken?(board, index)
+    end
