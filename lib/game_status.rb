@@ -13,3 +13,11 @@ WIN_COMBINATIONS = [
   [2,4,6],
   [0,4,8]
 ]# Define your WIN_COMBINATIONS constant
+def won?(board)
+  WIN_COMBINATIONS.detect do |combo|
+    if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X" && position_taken?(board, combo[0])
+    end 
+    end 
+end
+      
+    
