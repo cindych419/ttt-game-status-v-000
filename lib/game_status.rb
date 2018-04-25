@@ -36,6 +36,4 @@ elsif won?(board) && board[index] == "O"
 else
   nil
   end
-  end
-  end
 end
