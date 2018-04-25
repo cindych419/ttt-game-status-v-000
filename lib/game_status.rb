@@ -28,12 +28,8 @@ end
 def over?(board)
   draw?(board) || won?(board) && full?(board) || won?(board) && !full?(board)
 end
-def winner(board,)
-  if won?(board) && board == "X"
-  board("X")
-elsif won?(board) && board == "O"
-  board("O")
-else
-  nil
+def winner(board)
+  if winning_combo = won?(board)
+    board[winning_combo.first]
   end
 end
