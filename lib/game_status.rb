@@ -30,9 +30,9 @@ def over?(board)
 end
 def winner(board)
   if won?(board) && board[comb[0]] == "X"
-  puts "X"
+  "X"
 elsif won?(board) && board[comb[0]] == "O"
-  puts "O"
+  "O"
 else
   nil
   end
