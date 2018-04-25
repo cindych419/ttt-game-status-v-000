@@ -34,5 +34,4 @@ def winner?(board)
 elsif won?(board) && board[comb[0]] == "O"
   puts "O"
   end
-  end
 end
