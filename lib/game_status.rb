@@ -33,5 +33,7 @@ def winner(board)
   puts "X"
 elsif won?(board) && board[comb[0]] == "O"
   puts "O"
+else
+  nil
   end
 end
