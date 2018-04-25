@@ -28,11 +28,11 @@ end
 def over?(board)
   draw?(board) || won?(board) && full?(board) || won?(board) && !full?(board)
 end
-def winner(board, index)
+def winner(board
   if won?(board) && board[index] == "X"
-  "X"
+  board("X")
 elsif won?(board) && board[index] == "O"
-  "O"
+  board("O")
 else
   nil
   end
