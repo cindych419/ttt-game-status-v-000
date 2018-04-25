@@ -28,10 +28,10 @@ end
 def over?(board)
   draw?(board) || won?(board) && full?(board) || won?(board) && !full?(board)
 end
-def winner(board)
-  if won?(board) && board[comb[0]] == "X"
+def winner(board, index)
+  if won?(board) && board[index] == "X"
   "X"
-elsif won?(board) && board[comb[0]] == "O"
+elsif won?(board) && board[index] == "O"
   "O"
 else
   nil
