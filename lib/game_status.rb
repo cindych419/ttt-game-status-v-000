@@ -28,3 +28,10 @@ end
 def over?(board)
   draw?(board) || won?(board) && full?(board) || won?(board) && !full?(board)
 end
+def winner?(board)
+  won?(board) && board[comb[0]] == "X"
+  puts "X"
+  won?(board) && board[comb[0]] == "O"
+  puts "O"
+  end
+end
